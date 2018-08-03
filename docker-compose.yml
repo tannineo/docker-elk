@@ -23,7 +23,7 @@ services:
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
     ports:
       - "5000:5000" # for tcp input
-      - "5001:5001" # for udp input
+      - "5001:5001/udp" # for udp input
       - "5002:5002" # for http input
     environment:
       LS_JAVA_OPTS: "-Xmx1g -Xms1g"
